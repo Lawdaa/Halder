@@ -43,12 +43,27 @@ async def start(client: Client, message: Message):
                         "• ʜᴇʀᴇ ɪꜱ ᴀ ꜱᴜᴘᴘᴏʀᴛ •", url=f"https://t.me/CreatorPavanSupport")
                 ],[
                     InlineKeyboardButton(
-                        "• ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/TheCreatorPavan")
+                        "• ʜᴇʀᴇ ɪꜱ ᴀ ᴜᴘᴅᴀᴛᴇꜱ •", url=f"https://t.me/TheCreatorPavan")
                 ]
             ]
         ),
     )
 
+
+@Client.on_message(commandpro(["pavan"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/c71a064fd6ba982578641.jpg",
+        caption=f"""**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ. ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴏʀ ᴀ Qᴜᴇꜱᴛɪᴏɴ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʜᴇʀᴇ.**""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "• ᴄᴏɴᴛᴀᴄᴛ ʜᴇʀᴇ •", url=f"https://t.me/PavanxD")
+                ]
+            ]
+        ),
+    )
 
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
