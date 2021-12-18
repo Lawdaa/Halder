@@ -31,7 +31,7 @@ async def _human_time_duration(seconds):
    
 
     
-@Client.on_message(commandpro(["/start", "/alive", "pavan"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive", "/help"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/a0ceebfb97ce2f711ab37.jpg",
@@ -50,7 +50,7 @@ async def start(client: Client, message: Message):
     )
 
 
-@Client.on_message(commandpro(["pavan"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/pavan", "pavan", "/aayuu", "/ayuu"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c71a064fd6ba982578641.jpg",
