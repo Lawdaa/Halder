@@ -282,7 +282,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="💥 Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
                             url=f"https://t.me/adityadiscus")
 
                 ]
